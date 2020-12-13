@@ -1,3 +1,18 @@
 import React from 'react';
 
-export default () => <div>Home</div>;
+import image from '../code-cleanup.png';
+const Home = () => {
+  return (
+    <main>
+      <img
+        src={image}
+        alt="Code Passion"
+        className="absolute object-cover w-full h-full"
+      />
+      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+        <h3 className="text-6xl text-blue-100 font-bold cursive leading-none lg:leading-snug home-name">Hello World!</h3>
+      </section>
+    </main>
+  );
+};
+export default Home;
